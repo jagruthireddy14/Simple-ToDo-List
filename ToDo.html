@@ -4,7 +4,6 @@
         <script>
             var app=angular.module("myApp",[]);
             app.controller("myCtrl",function($scope){
-                // $scope.products=["Milk","cheese","butter"];
                 $scope.add=function(){
                     $scope.errortext="";
                     if(!$scope.addMe){
@@ -13,7 +12,7 @@
                     if($scope.products.indexOf($scope.addMe)==-1){
                         $scope.products.push($scope.addMe);
                     }else{
-                        $scope.errortext="The Task already exists";
+                        $scope.errortext="This Task already exists";
 
                     }
                 }
